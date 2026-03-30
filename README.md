@@ -56,6 +56,4 @@ display_floor()：負責在終端機繪製 10 層樓的狀態表。
 main()：主程式迴圈與輸入驗證。
 
 ## 注意事項
-終端機相容性：本程式使用 ANSI 控制字元，在 Linux、macOS 或 Windows 的現代終端機（如 Windows Terminal、PowerShell 7）運作良好。在舊版 CMD 上可能無法正確顯示顏色或位置。
-
 移動速度：目前設定為每層樓 1000 毫秒（1秒），可在程式碼頂端的 moveSpeed 常數進行修改。
