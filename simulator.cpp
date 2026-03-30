@@ -11,7 +11,7 @@ class Elevator
 {
 private:
     int current_floor;
-    int id = 0;
+    int id;
     static int totalElevator;
 public:
     Elevator() 
