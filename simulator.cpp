@@ -10,7 +10,7 @@
 #include <condition_variable>
 #include <algorithm>
 #include <list>
-#include <set>
+#include <unordered_set>
 #include <memory>
 #include <limits>
 #include <sys/socket.h>
@@ -128,8 +128,8 @@ public:
     enum class Direction { IDLE, UP, DOWN };
     Direction direction;
 
-    std::set<int> up_requests;
-    std::set<int, std::greater<int>> down_requests;
+    std::unordered_set<int> up_requests;
+    std::unordered_set<int> down_requests;
     std::vector<std::shared_ptr<Event>> tracked_events;
 
     std::mutex internal_mutex;
